@@ -1,0 +1,31 @@
+.checkbox {
+    cursor: pointer;
+  }
+  
+  .checkbox:hover .checkbox_check {
+    background: #ff4754;
+  }
+  
+  .checkbox_input {
+    width: 0;
+    height: 0;
+    opacity: 0;
+  }
+  
+  .checkbox_input:checked + .checkbox_check {
+    background: #ff4754;
+    stroke-dashoffset: 0;
+  }
+  
+  .checkbox_check {
+    border: 0.2rem solid #ff4754;
+    stroke: #f9f9f9;
+    stroke-dasharray: 30;
+    stroke-dashoffset: 30;
+    stroke-linecap: round;
+    stroke-width: 0.2em;
+    border-radius: 0.2em;
+    fill: none;
+    transition: background 0.4s, stroke-dashoffset 
+  0.6s;
+  }
